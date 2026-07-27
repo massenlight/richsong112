@@ -1,7 +1,7 @@
 import { TargetRole, CourseModule, ImageSlot } from '../types';
 
 export const COURSE_TITLE = "《千萬流量脆煉計畫》";
-export const COURSE_SUBTITLE_1 = "——讓素人起號立刻流量變現的最佳戰場";
+export const COURSE_SUBTITLE_1 = "讓素人起號立刻流量變現的最佳戰場";
 export const COURSE_SUBTITLE_2 = "——這是一堂改變品牌與掌握關鍵的 Threads 行銷實戰課";
 
 export const PAIN_POINT_TEXT_1 = `這個時代，
