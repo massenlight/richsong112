@@ -310,7 +310,8 @@ export const PainPoints: React.FC = () => {
         <div className="max-w-4xl mx-auto mb-16 space-y-8">
           <div className="text-center space-y-2">
             <h3 className="font-display text-2xl sm:text-3xl font-black text-white">
-              完成《千萬流量脆煉計畫》後，你都將知道：
+              完成《千萬流量脆煉計畫》後，<br />
+              你都將知道：
             </h3>
           </div>
 
@@ -466,7 +467,7 @@ export const PainPoints: React.FC = () => {
                         <Flame className="w-5 h-5 text-red-500" />
                         流量大爆發
                       </span>
-                      <span className="text-red-400 font-mono font-black">1,100,000+ 觸及</span>
+                      <span className="text-red-400 font-mono font-black">1,000,000+ 觸及</span>
                     </div>
 
                     <div className="px-4 py-3 rounded-sm bg-[#0f0f0f] border border-red-900/50 text-neutral-200 text-base sm:text-lg font-bold flex flex-col items-start gap-1 w-full">

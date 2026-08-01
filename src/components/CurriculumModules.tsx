@@ -25,7 +25,8 @@ export const CurriculumModules: React.FC = () => {
             全面拆解Threads流量變現實戰地圖
           </div>
           <h2 className="font-display text-3xl sm:text-5xl font-black text-white tracking-tight">
-            誰最適合學習 千萬流量脆煉計畫？
+            誰最適合學習<br />
+            《千萬流量脆煉計畫》？
           </h2>
         </div>
 

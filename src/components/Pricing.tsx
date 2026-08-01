@@ -78,7 +78,7 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenRegister }) => {
 
               <div className="pt-8 mt-8 border-t border-neutral-800/80">
                 <a
-                  href="https://lin.ee/U7dShjrb"
+                  href="https://line.me/R/ti/p/@531cnikn"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full py-4 rounded-sm font-extrabold uppercase tracking-widest text-xs transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 ${
