@@ -21,7 +21,9 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenRegister }) => {
           </div>
 
           <h2 className="font-display text-2xl sm:text-4xl font-black text-white tracking-tight leading-snug">
-            請記住——你可以選擇繼續等待別人發現你，也可以從今天開始，讓世界主動看見你。
+            請記住——<br />
+            你可以選擇繼續等待別人發現你，<br />
+            也可以從今天開始，讓世界主動看見你。
           </h2>
 
           <p className="text-neutral-400 text-base sm:text-lg max-w-2xl mx-auto">
@@ -95,8 +97,24 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenRegister }) => {
           ))}
         </div>
 
+        {/* Threads Opportunity Image Banner */}
+        <div className="mt-16 max-w-3xl mx-auto overflow-hidden rounded-sm border border-neutral-800 bg-black shadow-xl">
+          <img
+            src="https://i.imgur.com/Wr7CXiC.png"
+            alt="你錯過FB、IG、YouTube 的成長期，別再錯過 Threads"
+            referrerPolicy="no-referrer"
+            className="w-full h-auto object-cover"
+          />
+          <div className="px-4 py-3 sm:px-5 sm:py-4 border-t border-neutral-800 bg-[#0f0f0f]">
+            <p className="text-sm sm:text-base font-bold text-neutral-100 leading-relaxed flex items-start gap-2">
+              <span className="text-red-500 shrink-0">▸</span>
+              <span>你錯過FB的成長期，錯過IG、錯過YouTube … 那你絕對不能再錯過Threads</span>
+            </p>
+          </div>
+        </div>
+
         {/* Security Guarantee Banner */}
-        <div className="mt-16 max-w-3xl mx-auto p-5 sm:p-6 rounded-sm bg-[#0f0f0f] border border-red-900/40 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 text-left">
+        <div className="mt-8 max-w-3xl mx-auto p-5 sm:p-6 rounded-sm bg-[#0f0f0f] border border-red-900/40 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 text-left">
           <div className="flex items-center gap-3 shrink-0">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-red-950 border border-red-800 flex items-center justify-center text-red-500 shrink-0 rounded-sm">
               <ShieldCheck className="w-5 h-5 sm:w-6 sm:h-6" />
