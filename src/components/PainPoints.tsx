@@ -135,7 +135,7 @@ export const PainPoints: React.FC = () => {
             <span>現象揭密與現實落差</span>
           </div>
           <h2 className="font-display text-[22px] sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-            把看似複雜的社群經營，變成任何人都能立即上手的一套實戰系統。
+            把看似複雜的社群經營，<br />變成任何人都能立即上手的一套實戰系統。
           </h2>
         </div>
 
@@ -279,7 +279,7 @@ export const PainPoints: React.FC = () => {
                   {activeRole.subtitle}
                 </span>
                 <h3 className="text-[19px] sm:text-3xl font-extrabold text-white font-display">
-                  專屬於【{activeRole.title}】的 Threads 突破解法
+                  【{activeRole.title}】的 Threads 突破解法
                 </h3>
               </div>
               <div className="hidden sm:block px-3.5 py-1.5 bg-red-950/80 border border-red-800 text-red-300 text-xs font-mono uppercase tracking-wider rounded-sm font-bold">
@@ -392,20 +392,20 @@ export const PainPoints: React.FC = () => {
                 <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-4">
                   
                   {/* Left Side: Intake Badges */}
-                  <div className="flex flex-wrap md:flex-col items-center md:items-end justify-center gap-3 w-full md:w-1/4">
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center gap-2 hover:border-red-500 transition-colors">
+                  <div className="grid grid-cols-2 gap-3 w-full md:w-1/4">
+                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
                       <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                       品牌
                     </div>
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center gap-2 hover:border-red-500 transition-colors">
+                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
                       <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                       企業
                     </div>
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center gap-2 hover:border-red-500 transition-colors">
+                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
                       <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                       自媒體
                     </div>
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center gap-2 hover:border-red-500 transition-colors">
+                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
                       <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                       創作者
                     </div>
@@ -453,28 +453,28 @@ export const PainPoints: React.FC = () => {
 
                   {/* Right Side: Outflow Blast Results */}
                   <div className="flex flex-col items-center md:items-start justify-center gap-2.5 w-full md:w-1/3">
-                    <div className="px-4 py-2.5 rounded-sm bg-gradient-to-r from-red-950 via-[#1a0505] to-[#0f0f0f] border border-red-700/80 text-white text-xs sm:text-sm font-black shadow-xl flex items-center gap-2 w-full justify-between">
+                    <div className="px-4 py-3 rounded-sm bg-gradient-to-r from-red-950 via-[#1a0505] to-[#0f0f0f] border border-red-700/80 text-white text-base sm:text-lg font-black shadow-xl flex flex-col items-start gap-1 w-full">
                       <span className="flex items-center gap-2 text-red-400">
-                        <Flame className="w-4 h-4 text-red-500" />
+                        <Flame className="w-5 h-5 text-red-500" />
                         流量大爆發
                       </span>
                       <span className="text-red-400 font-mono font-black">+100,000+ 觸及</span>
                     </div>
 
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-red-900/50 text-neutral-200 text-xs sm:text-sm font-bold flex items-center gap-2 w-full justify-between">
+                    <div className="px-4 py-3 rounded-sm bg-[#0f0f0f] border border-red-900/50 text-neutral-200 text-base sm:text-lg font-bold flex flex-col items-start gap-1 w-full">
                       <span className="flex items-center gap-2">
-                        <Zap className="w-3.5 h-3.5 text-yellow-400" />
+                        <Zap className="w-5 h-5 text-yellow-400" />
                         爆款文持續擴散
                       </span>
-                      <span className="text-neutral-400 text-xs">演算法推送</span>
+                      <span className="text-neutral-400 text-sm">演算法推送</span>
                     </div>
 
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-red-900/50 text-neutral-200 text-xs sm:text-sm font-bold flex items-center gap-2 w-full justify-between">
+                    <div className="px-4 py-3 rounded-sm bg-[#0f0f0f] border border-red-900/50 text-neutral-200 text-base sm:text-lg font-bold flex flex-col items-start gap-1 w-full">
                       <span className="flex items-center gap-2">
-                        <TrendingUp className="w-3.5 h-3.5 text-green-400" />
+                        <TrendingUp className="w-5 h-5 text-green-400" />
                         自動化私域引流
                       </span>
-                      <span className="text-neutral-400 text-xs">高效益變現</span>
+                      <span className="text-neutral-400 text-sm">高效益變現</span>
                     </div>
                   </div>
 

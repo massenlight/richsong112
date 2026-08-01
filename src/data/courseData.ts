@@ -4,11 +4,10 @@ export const COURSE_TITLE = "《千萬流量脆煉計畫》";
 export const COURSE_SUBTITLE_1 = "讓素人起號立刻流量變現的最佳戰場";
 export const COURSE_SUBTITLE_2 = "——這是一堂改變品牌與掌握關鍵的 Threads 行銷實戰課";
 
-export const PAIN_POINT_TEXT_1 = `這個時代，
-有人每天發文，
-三個月就能累積數萬粉絲；
+export const PAIN_POINT_TEXT_1 = `有人每天發文，
+三個月累積數萬粉絲；
 有人努力一年，
-卻始終只有身邊朋友按讚。`;
+只有身邊朋友按讚。`;
 
 export const PAIN_POINT_TEXT_2 = `差別不是運氣，
 而是懂不懂 Threads 的底層邏輯。`;
