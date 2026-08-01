@@ -109,28 +109,12 @@ export const Hero: React.FC<HeroProps> = ({
             </div>
 
             <div className="space-y-3">
-              <p className="text-base sm:text-xl font-bold text-red-500 uppercase tracking-widest font-mono">
+              <p className="text-[28px] font-bold text-red-500 uppercase tracking-widest font-mono">
                 {COURSE_SUBTITLE_1}
               </p>
               <p className="text-sm sm:text-lg font-normal text-neutral-300 leading-relaxed">
                 {COURSE_SUBTITLE_2}
               </p>
-            </div>
-
-            {/* Key Value Pill Highlights - Left Aligned */}
-            <div className="flex flex-wrap items-center justify-start gap-3 pt-2 text-xs uppercase tracking-wider font-mono text-neutral-300">
-              <div className="flex items-center gap-2 px-3.5 py-2 bg-black/80 border border-red-900/40 rounded-sm">
-                <Zap className="w-4 h-4 text-red-600" />
-                <span>演算法冷啟動機制</span>
-              </div>
-              <div className="flex items-center gap-2 px-3.5 py-2 bg-black/80 border border-red-900/40 rounded-sm">
-                <ShieldCheck className="w-4 h-4 text-red-600" />
-                <span>爆文腳本速成</span>
-              </div>
-              <div className="flex items-center gap-2 px-3.5 py-2 bg-black/80 border border-red-900/40 rounded-sm">
-                <Users className="w-4 h-4 text-red-600" />
-                <span>私域流量直接變現</span>
-              </div>
             </div>
 
             {/* CTA Buttons - Left Aligned */}
@@ -158,25 +142,20 @@ export const Hero: React.FC<HeroProps> = ({
 
             {/* Floating / Bottom Stats Bar on Image Background - Left Aligned & Half Width */}
             <div className="pt-6 border-t border-red-900/30 flex flex-col sm:flex-row items-center sm:items-center justify-start gap-6 text-white max-w-lg">
-              <div className="flex items-center gap-3 text-left">
-                <div className="w-10 h-10 bg-red-900/40 border border-red-800 flex items-center justify-center text-red-400 rounded-sm shrink-0">
-                  <Flame className="w-5 h-5" />
+              <div className="flex items-center gap-4 text-left">
+                <div className="w-14 h-14 bg-red-900/40 border border-red-800 flex items-center justify-center text-red-400 rounded-sm shrink-0">
+                  <Flame className="w-7 h-7" />
                 </div>
                 <div>
-                  <p className="text-[11px] uppercase tracking-wider font-mono text-neutral-400">Threads 實戰目標</p>
-                  <p className="text-xs sm:text-sm font-bold text-white">單篇貼文破 1,000,000+ 觸及</p>
+                  <p className="text-sm sm:text-base uppercase tracking-wider font-mono text-neutral-400">Threads 實戰目標</p>
+                  <p className="text-base sm:text-lg font-bold text-white">單篇貼文破 1,000,000+ 觸及</p>
                 </div>
               </div>
 
               <div className="flex items-center justify-center sm:justify-start gap-5 text-xs sm:text-sm shrink-0 pt-2 sm:pt-0 sm:border-l sm:border-neutral-800 sm:pl-5 w-full sm:w-auto text-center sm:text-left">
                 <div>
-                  <span className="block text-red-500 font-extrabold text-base sm:text-lg font-mono">100%</span>
-                  <span className="text-neutral-400 text-[11px]">爆文拆解</span>
-                </div>
-                <div className="h-8 w-px bg-neutral-800" />
-                <div>
-                  <span className="block text-red-500 font-extrabold text-base sm:text-lg font-mono">0 廣告費</span>
-                  <span className="text-neutral-400 text-[11px]">自然流量</span>
+                  <span className="block text-red-500 font-extrabold text-2xl sm:text-3xl font-mono">0 廣告費</span>
+                  <span className="text-neutral-400 text-sm sm:text-base">自然流量</span>
                 </div>
               </div>
             </div>
@@ -184,10 +163,26 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
         </div>
 
+        {/* Key Value Pill Highlights - moved above social proof stats */}
+        <div className="mt-8 sm:mt-14 flex flex-wrap items-center justify-center gap-3 max-w-4xl mx-auto text-xs uppercase tracking-wider font-mono text-neutral-300">
+          <div className="flex items-center gap-2 px-3.5 py-2 bg-black/80 border border-red-900/40 rounded-sm">
+            <Zap className="w-4 h-4 text-red-600" />
+            <span>演算法冷啟動機制</span>
+          </div>
+          <div className="flex items-center gap-2 px-3.5 py-2 bg-black/80 border border-red-900/40 rounded-sm">
+            <ShieldCheck className="w-4 h-4 text-red-600" />
+            <span>爆文腳本速成</span>
+          </div>
+          <div className="flex items-center gap-2 px-3.5 py-2 bg-black/80 border border-red-900/40 rounded-sm">
+            <Users className="w-4 h-4 text-red-600" />
+            <span>私域流量直接變現</span>
+          </div>
+        </div>
+
         {/* Social Proof Stats Bar */}
         <div className="mt-8 sm:mt-14 grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-4 max-w-4xl mx-auto">
           <div className="p-3 sm:p-5 bg-[#0f0f0f] border border-red-900/30 text-center space-y-0.5 sm:space-y-1 rounded-sm">
-            <div className="text-lg sm:text-3xl font-black font-mono text-red-600">10,000,000+</div>
+            <div className="text-lg sm:text-3xl font-black font-mono text-red-600">1,000,000</div>
             <div className="text-[11px] sm:text-xs uppercase tracking-wider text-neutral-400">引爆累積流量觸及</div>
           </div>
           <div className="p-3 sm:p-5 bg-[#0f0f0f] border border-red-900/30 text-center space-y-0.5 sm:space-y-1 rounded-sm">
