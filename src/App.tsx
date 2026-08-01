@@ -8,8 +8,9 @@ import { Faq } from './components/Faq';
 import { Footer } from './components/Footer';
 import { ImagePlaceholderHelper } from './components/ImagePlaceholderHelper';
 import { GithubDeployGuide } from './components/GithubDeployGuide';
-import { RegistrationModal } from './components/RegistrationModal';
 import { DEFAULT_IMAGE_SLOTS } from './data/courseData';
+
+const LINE_URL = 'https://line.me/R/ti/p/@531cnikn';
 import { ImageSlot } from './types';
 import { Sparkles, Flame, Image as ImageIcon, Github } from 'lucide-react';
 
@@ -17,7 +18,10 @@ export default function App() {
   const [imageSlots, setImageSlots] = useState<ImageSlot[]>(DEFAULT_IMAGE_SLOTS);
   const [isImageHelperOpen, setIsImageHelperOpen] = useState(false);
   const [isGithubGuideOpen, setIsGithubGuideOpen] = useState(false);
-  const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
+
+  const handleOpenRegister = () => {
+    window.open(LINE_URL, '_blank', 'noopener,noreferrer');
+  };
 
   const handleUpdateImageSlot = (id: string, newUrl: string) => {
     setImageSlots((prev) =>
@@ -63,7 +67,7 @@ export default function App() {
       <Header
         onOpenGithubGuide={() => setIsGithubGuideOpen(true)}
         onOpenImageHelper={() => setIsImageHelperOpen(true)}
-        onOpenRegister={() => setIsRegisterModalOpen(true)}
+        onOpenRegister={handleOpenRegister}
       />
 
       {/* Main Content Sections */}
@@ -71,7 +75,7 @@ export default function App() {
         <Hero
           heroImageUrl={heroImage}
           onOpenImageHelper={() => setIsImageHelperOpen(true)}
-          onOpenRegister={() => setIsRegisterModalOpen(true)}
+          onOpenRegister={handleOpenRegister}
         />
 
         <PainPoints />
@@ -81,7 +85,7 @@ export default function App() {
         <Faq />
 
         <Pricing
-          onOpenRegister={() => setIsRegisterModalOpen(true)}
+          onOpenRegister={handleOpenRegister}
         />
       </main>
 
@@ -89,7 +93,7 @@ export default function App() {
       <Footer
         onOpenGithubGuide={() => setIsGithubGuideOpen(true)}
         onOpenImageHelper={() => setIsImageHelperOpen(true)}
-        onOpenRegister={() => setIsRegisterModalOpen(true)}
+        onOpenRegister={handleOpenRegister}
       />
 
       {/* Fixed Floating Bottom Bar for Mobile & Desktop */}
@@ -104,7 +108,7 @@ export default function App() {
         </div>
 
         <button
-          onClick={() => setIsRegisterModalOpen(true)}
+          onClick={handleOpenRegister}
           className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-red-600 to-red-800 hover:from-red-500 hover:to-red-700 font-bold text-xs text-white shadow-lg shadow-red-900/60 transition-all cursor-pointer flex items-center gap-1.5 shrink-0"
         >
           <Sparkles className="w-3.5 h-3.5" />
@@ -124,11 +128,6 @@ export default function App() {
       <GithubDeployGuide
         isOpen={isGithubGuideOpen}
         onClose={() => setIsGithubGuideOpen(false)}
-      />
-
-      <RegistrationModal
-        isOpen={isRegisterModalOpen}
-        onClose={() => setIsRegisterModalOpen(false)}
       />
 
     </div>

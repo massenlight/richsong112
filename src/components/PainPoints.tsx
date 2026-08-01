@@ -393,19 +393,19 @@ export const PainPoints: React.FC = () => {
                   
                   {/* Left Side: Intake Badges */}
                   <div className="grid grid-cols-2 gap-3 w-full md:w-1/4">
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
+                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-base sm:text-lg font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
                       <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                       品牌
                     </div>
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
+                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-base sm:text-lg font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
                       <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                       企業
                     </div>
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
+                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-base sm:text-lg font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
                       <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                       自媒體
                     </div>
-                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-xs sm:text-sm font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
+                    <div className="px-4 py-2 rounded-sm bg-[#0f0f0f] border border-neutral-700 text-neutral-200 text-base sm:text-lg font-bold shadow-lg flex items-center justify-center gap-2 hover:border-red-500 transition-colors">
                       <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
                       創作者
                     </div>
@@ -458,7 +458,7 @@ export const PainPoints: React.FC = () => {
                         <Flame className="w-5 h-5 text-red-500" />
                         流量大爆發
                       </span>
-                      <span className="text-red-400 font-mono font-black">+100,000+ 觸及</span>
+                      <span className="text-red-400 font-mono font-black">1,100,000+ 觸及</span>
                     </div>
 
                     <div className="px-4 py-3 rounded-sm bg-[#0f0f0f] border border-red-900/50 text-neutral-200 text-base sm:text-lg font-bold flex flex-col items-start gap-1 w-full">
