@@ -6,6 +6,7 @@ export interface TargetRole {
   description: string;
   keyOutcomes: string[];
   caseImageUrl?: string;
+  caseCaption?: string;
 }
 
 export interface CourseModule {

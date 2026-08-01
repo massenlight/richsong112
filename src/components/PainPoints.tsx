@@ -294,6 +294,14 @@ export const PainPoints: React.FC = () => {
                 referrerPolicy="no-referrer"
                 className="w-full h-auto max-h-[420px] object-cover hover:scale-105 transition-transform duration-500"
               />
+              {activeRole.caseCaption && (
+                <div className="px-4 py-3 sm:px-5 sm:py-4 border-t border-neutral-800 bg-[#0f0f0f]">
+                  <p className="text-sm sm:text-base font-bold text-neutral-100 leading-relaxed flex items-start gap-2">
+                    <span className="text-red-500 shrink-0">▸</span>
+                    <span>{activeRole.caseCaption}</span>
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>

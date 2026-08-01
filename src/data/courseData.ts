@@ -60,7 +60,8 @@ export const TARGET_ROLES: TargetRole[] = [
     iconName: "PenTool",
     description: "突破靈感瓶頸與觸擊率低迷，建立穩定的高爆文產出節奏。",
     keyOutcomes: ["解密 Threads 熱門話題鉤子", "30 分鐘快速產出 5 篇爆款貼文", "建立高黏度個人忠實粉絲圈"],
-    caseImageUrl: "https://i.imgur.com/kc1kuE3.png"
+    caseImageUrl: "https://i.imgur.com/kc1kuE3.png",
+    caseCaption: "獨立遊戲 app 創作者，熱門下載排行衝向前 3 名"
   },
   {
     id: "brand",
@@ -69,7 +70,8 @@ export const TARGET_ROLES: TargetRole[] = [
     iconName: "Building2",
     description: "以極低成本獲取精準顧客，翻轉品牌在年輕社群中的知名度與聲量。",
     keyOutcomes: ["不用買貴爆廣告也能獲得萬次曝光", "將品牌的真實故事化為高好感貼文", "無縫導流至官網與實體門市"],
-    caseImageUrl: "https://i.imgur.com/fi1MLJc.png"
+    caseImageUrl: "https://i.imgur.com/fi1MLJc.png",
+    caseCaption: "台灣本土文創品牌，產品在設計購物平台拿下銷售第一"
   },
   {
     id: "sales",
@@ -78,7 +80,8 @@ export const TARGET_ROLES: TargetRole[] = [
     iconName: "UserCheck",
     description: "源源不絕的潛在客戶自動找上門，擺脫冷不防推銷的痛苦窘境。",
     keyOutcomes: ["展示專業知識讓客戶主動私訊諮詢", "高效率名單收集與信任建立機制", "提高個案客單價與成交轉換率"],
-    caseImageUrl: "https://i.imgur.com/rZOKgsk.png"
+    caseImageUrl: "https://i.imgur.com/rZOKgsk.png",
+    caseCaption: "資深業務打造個人 IP，後台詢問度暴增"
   },
   {
     id: "self_media",
@@ -87,7 +90,8 @@ export const TARGET_ROLES: TargetRole[] = [
     iconName: "Share2",
     description: "打造高知名度個人自媒體，建立強大社交影響力。",
     keyOutcomes: ["從零起號單月粉絲突破 10,000+", "掌握話題熱度與忠實粉絲社群", "打造長期個人品牌價值"],
-    caseImageUrl: "https://i.imgur.com/mxqPCYn.png"
+    caseImageUrl: "https://i.imgur.com/mxqPCYn.png",
+    caseCaption: "行銷相關女孩經營自媒體，串文瀏覽數創新高，一天內變現 1 萬元"
   },
   {
     id: "side_hustle",
@@ -96,7 +100,8 @@ export const TARGET_ROLES: TargetRole[] = [
     iconName: "DollarSign",
     description: "利用下班每天 30 分鐘經營 Threads，打造持續性的第二收入渠道。",
     keyOutcomes: ["接洽業配、聯盟行銷與顧問服務", "自動化導流與變現機制", "打造不倚賴主業的第二收入管道"],
-    caseImageUrl: "https://i.imgur.com/uAwYVbN.png"
+    caseImageUrl: "https://i.imgur.com/uAwYVbN.png",
+    caseCaption: "素人女孩經營脆帳號，成功接到業配"
   },
   {
     id: "entrepreneur",
@@ -105,7 +110,8 @@ export const TARGET_ROLES: TargetRole[] = [
     iconName: "Briefcase",
     description: "運用內容槓桿驗證商業模式，迅速打響企業品牌並獲取高品質合作機會。",
     keyOutcomes: ["精準吸引投資人與商業合作夥伴", "高效率建立新事業聲量與信任感", "無縫串聯商業閉環與用戶生態系"],
-    caseImageUrl: "https://i.imgur.com/BQxL11o.png"
+    caseImageUrl: "https://i.imgur.com/BQxL11o.png",
+    caseCaption: "服飾店的共創店創業計畫，後台詢問度暴增"
   },
   {
     id: "instructor",
@@ -114,7 +120,8 @@ export const TARGET_ROLES: TargetRole[] = [
     iconName: "GraduationCap",
     description: "將專業知識萃取為高爆發力內容，吸引學員主動諮詢與報名課程。",
     keyOutcomes: ["塑造知識型權威 IP 人設", "把觀點貼文轉化為高價課程報名", "打造自動化知識變現閉環"],
-    caseImageUrl: "https://i.imgur.com/0mqAUK5.png"
+    caseImageUrl: "https://i.imgur.com/0mqAUK5.png",
+    caseCaption: "講師經營脆帳號，打開知名度，瀏覽次數從寥寥無幾的 100 以下到突破百萬"
   }
 ];
 
