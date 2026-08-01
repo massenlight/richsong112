@@ -149,15 +149,17 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
                 </div>
               </div>
 
-              {/* Submit Button */}
-              <button
-                type="submit"
+              {/* Submit Button - 直接跳轉官方 LINE */}
+              <a
+                href="https://line.me/R/ti/p/@531cnikn"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full py-4 bg-gradient-to-r from-red-600 to-red-800 hover:from-red-500 hover:to-red-700 text-white font-extrabold uppercase tracking-widest text-sm transition-all duration-200 cursor-pointer rounded-sm flex items-center justify-center gap-2 shadow-xl"
               >
                 <Sparkles className="w-4 h-4" />
                 <span>立即加Line報名</span>
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
 
             </form>
           )}

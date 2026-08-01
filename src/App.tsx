@@ -8,9 +8,8 @@ import { Faq } from './components/Faq';
 import { Footer } from './components/Footer';
 import { ImagePlaceholderHelper } from './components/ImagePlaceholderHelper';
 import { GithubDeployGuide } from './components/GithubDeployGuide';
+import { RegistrationModal } from './components/RegistrationModal';
 import { DEFAULT_IMAGE_SLOTS } from './data/courseData';
-
-const LINE_URL = 'https://line.me/R/ti/p/@531cnikn';
 import { ImageSlot } from './types';
 import { Sparkles, Flame, Image as ImageIcon, Github } from 'lucide-react';
 
@@ -18,9 +17,10 @@ export default function App() {
   const [imageSlots, setImageSlots] = useState<ImageSlot[]>(DEFAULT_IMAGE_SLOTS);
   const [isImageHelperOpen, setIsImageHelperOpen] = useState(false);
   const [isGithubGuideOpen, setIsGithubGuideOpen] = useState(false);
+  const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
 
   const handleOpenRegister = () => {
-    window.open(LINE_URL, '_blank', 'noopener,noreferrer');
+    setIsRegisterModalOpen(true);
   };
 
   const handleUpdateImageSlot = (id: string, newUrl: string) => {
@@ -128,6 +128,11 @@ export default function App() {
       <GithubDeployGuide
         isOpen={isGithubGuideOpen}
         onClose={() => setIsGithubGuideOpen(false)}
+      />
+
+      <RegistrationModal
+        isOpen={isRegisterModalOpen}
+        onClose={() => setIsRegisterModalOpen(false)}
       />
 
     </div>
