@@ -7,9 +7,10 @@ import { trackedLineEntryUrl } from '../lib/lineEntry';
 interface RegistrationModalProps {
   isOpen: boolean;
   onClose: () => void;
+  entryVisit: string;
 }
 
-export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose }) => {
+export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, onClose, entryVisit }) => {
   const [selectedPlanId, setSelectedPlanId] = useState<string>('early_bird');
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState<RegistrationFormData>({
@@ -83,7 +84,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
 
               <div className="pt-4 flex flex-col sm:flex-row gap-3 justify-center">
                 <a
-                  href={trackedLineEntryUrl()}
+                  href={trackedLineEntryUrl(entryVisit)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white font-extrabold text-xs uppercase tracking-widest rounded-sm transition-all cursor-pointer inline-flex items-center justify-center gap-2 shadow-lg"
@@ -152,7 +153,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
 
               {/* Submit Button - 直接跳轉官方 LINE */}
               <a
-                href={trackedLineEntryUrl()}
+                href={trackedLineEntryUrl(entryVisit)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full py-4 bg-gradient-to-r from-red-600 to-red-800 hover:from-red-500 hover:to-red-700 text-white font-extrabold uppercase tracking-widest text-sm transition-all duration-200 cursor-pointer rounded-sm flex items-center justify-center gap-2 shadow-xl"

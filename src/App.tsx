@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { PainPoints } from './components/PainPoints';
@@ -12,12 +12,18 @@ import { RegistrationModal } from './components/RegistrationModal';
 import { DEFAULT_IMAGE_SLOTS } from './data/courseData';
 import { ImageSlot } from './types';
 import { Sparkles, Flame, Image as ImageIcon, Github } from 'lucide-react';
+import { ensureDirectLandingVisit } from './lib/directLandingTracking';
 
 export default function App() {
   const [imageSlots, setImageSlots] = useState<ImageSlot[]>(DEFAULT_IMAGE_SLOTS);
   const [isImageHelperOpen, setIsImageHelperOpen] = useState(false);
   const [isGithubGuideOpen, setIsGithubGuideOpen] = useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
+  const [entryVisit, setEntryVisit] = useState('');
+
+  useEffect(() => {
+    void ensureDirectLandingVisit().then(setEntryVisit);
+  }, []);
 
   const handleOpenRegister = () => {
     setIsRegisterModalOpen(true);
@@ -133,6 +139,7 @@ export default function App() {
       <RegistrationModal
         isOpen={isRegisterModalOpen}
         onClose={() => setIsRegisterModalOpen(false)}
+        entryVisit={entryVisit}
       />
 
     </div>
