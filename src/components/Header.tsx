@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Flame, Github, Image as ImageIcon, ArrowRight, Menu, X, Sparkles } from 'lucide-react';
+import { Flame, ArrowRight, Menu, X, Sparkles } from 'lucide-react';
 
 interface HeaderProps {
-  onOpenGithubGuide: () => void;
-  onOpenImageHelper: () => void;
   onOpenRegister: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  onOpenGithubGuide,
-  onOpenImageHelper,
   onOpenRegister,
 }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -95,7 +91,7 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => scrollToSection('pricing')}
             className="text-neutral-400 hover:text-white transition-colors cursor-pointer"
           >
-            我要報名
+            加入 LINE
           </button>
         </nav>
 
@@ -107,7 +103,7 @@ export const Header: React.FC<HeaderProps> = ({
             className="px-5 py-2.5 bg-white text-black font-extrabold uppercase text-xs tracking-widest hover:bg-red-700 hover:text-white transition-all duration-200 cursor-pointer shadow-md rounded-sm flex items-center gap-2"
           >
             <Sparkles className="w-3.5 h-3.5 text-red-700 hover:text-white" />
-            <span>搶先報名</span>
+            <span>加入官方 LINE</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
@@ -155,7 +151,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => scrollToSection('pricing')}
               className="text-left text-neutral-300 hover:text-red-400 py-1 font-medium"
             >
-              我要報名
+              加入 LINE
             </button>
           </div>
 
@@ -168,7 +164,7 @@ export const Header: React.FC<HeaderProps> = ({
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-to-r from-red-600 to-red-800 text-white font-bold text-sm shadow-lg shadow-red-900/40"
             >
               <Sparkles className="w-4 h-4" />
-              <span>立即搶先報名</span>
+              <span>加入官方 LINE</span>
             </button>
           </div>
         </div>

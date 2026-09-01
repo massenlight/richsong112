@@ -68,7 +68,7 @@ export const TargetAudience: React.FC<TargetAudienceProps> = ({ onOpenRegister }
               onClick={onOpenRegister}
               className="px-8 py-4 bg-red-800 hover:bg-red-700 text-white font-extrabold text-xs uppercase tracking-widest shadow-2xl transition-all cursor-pointer rounded-sm"
             >
-              掌握五大核心能力，立即報名
+              掌握五大核心能力，加入 LINE 了解
             </button>
           </div>
         </div>

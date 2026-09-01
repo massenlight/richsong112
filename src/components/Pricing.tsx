@@ -1,7 +1,6 @@
 import React from 'react';
 import { PRICING_PLANS } from '../data/courseData';
 import { CheckCircle2, Sparkles, ShieldCheck, Flame, ArrowRight } from 'lucide-react';
-import { trackedLineEntryUrl } from '../lib/lineEntry';
 
 interface PricingProps {
   onOpenRegister: () => void;
@@ -78,10 +77,9 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenRegister }) => {
               </div>
 
               <div className="pt-8 mt-8 border-t border-neutral-800/80">
-                <a
-                  href={trackedLineEntryUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={onOpenRegister}
                   className={`w-full py-4 rounded-sm font-extrabold uppercase tracking-widest text-xs transition-all duration-200 cursor-pointer flex items-center justify-center gap-2 ${
                     plan.popular
                       ? 'bg-white text-black hover:bg-red-800 hover:text-white shadow-xl'
@@ -89,9 +87,9 @@ export const Pricing: React.FC<PricingProps> = ({ onOpenRegister }) => {
                   }`}
                 >
                   <Sparkles className="w-4 h-4" />
-                  <span>立即加Line預約名額</span>
+                  <span>加入官方 LINE 洽詢</span>
                   <ArrowRight className="w-4 h-4" />
-                </a>
+                </button>
               </div>
 
             </div>

@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { COURSE_TITLE, COURSE_SUBTITLE_1, COURSE_SUBTITLE_2 } from '../data/courseData';
-import { Flame, ArrowRight, Play, Image as ImageIcon, Sparkles, ShieldCheck, Zap, Users } from 'lucide-react';
+import { Flame, ArrowRight, Play, Sparkles, ShieldCheck, Zap, Users } from 'lucide-react';
 
 interface HeroProps {
   heroImageUrl: string;
-  onOpenImageHelper: () => void;
   onOpenRegister: () => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({
   heroImageUrl,
-  onOpenImageHelper,
   onOpenRegister,
 }) => {
   // Countdown Timer (Last week Saturday 00:00 calculation)
@@ -124,7 +122,7 @@ export const Hero: React.FC<HeroProps> = ({
                 className="w-full sm:w-auto px-9 py-4 bg-red-800 hover:bg-red-700 text-white font-extrabold text-sm uppercase tracking-widest cursor-pointer transition-all duration-200 shadow-2xl rounded-sm flex items-center justify-center gap-3"
               >
                 <Sparkles className="w-4 h-4 text-white" />
-                <span>立即加入脆煉計畫</span>
+                <span>加入世豐老師官方 LINE</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
