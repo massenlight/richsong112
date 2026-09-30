@@ -3,7 +3,7 @@ type TrackingResponse = {
   entryVisit?: string;
 };
 
-const API_BASE_URL = 'https://webinar-test.root2studio.com';
+const API_BASE_URL = 'https://massenlighten-platform.massenlighten-company.workers.dev';
 const VISIT_KEY_PREFIX = 'shifeng-direct-line-entry-visit-v1';
 let landingVisitPromise: Promise<string> | null = null;
 
@@ -21,6 +21,7 @@ function campaignData() {
     utmCampaign: params.get('utm_campaign') || '',
     utmContent: params.get('utm_content') || '',
     utmTerm: params.get('utm_term') || '',
+    fbclid: params.get('fbclid') || '',
   };
 }
 

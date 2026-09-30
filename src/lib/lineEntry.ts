@@ -1,5 +1,5 @@
-const TRACKED_LINE_ENTRY_URL = 'https://webinar-test.root2studio.com/r/line-direct';
-const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'] as const;
+const TRACKED_LINE_ENTRY_URL = 'https://massenlighten-platform.massenlighten-company.workers.dev/r/line-direct';
+const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid'] as const;
 
 export function trackedLineEntryUrl(entryVisit = '') {
   const destination = new URL(TRACKED_LINE_ENTRY_URL);
