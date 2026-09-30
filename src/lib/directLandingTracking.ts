@@ -26,7 +26,7 @@ function campaignData() {
 }
 
 function storageKey(data: ReturnType<typeof campaignData>) {
-  const signature = [data.utmSource, data.utmMedium, data.utmCampaign, data.utmContent].join('|');
+  const signature = [data.utmSource, data.utmMedium, data.utmCampaign, data.utmContent, data.fbclid].join('|');
   return `${VISIT_KEY_PREFIX}:${encodeURIComponent(signature).slice(0, 500)}`;
 }
 
@@ -50,6 +50,7 @@ function safeReferrer() {
 }
 
 export function ensureDirectLandingVisit() {
+  if (new URLSearchParams(window.location.search).get('preview') === '1') return Promise.resolve('');
   if (landingVisitPromise) return landingVisitPromise;
   landingVisitPromise = (async () => {
     const data = campaignData();
@@ -64,16 +65,17 @@ export function ensureDirectLandingVisit() {
         ...data,
       }),
       keepalive: true,
+      signal: AbortSignal.timeout(8000),
     });
     const result = (await response.json().catch(() => ({}))) as TrackingResponse;
     const visitId = result.entryVisit || remembered;
-    if (!response.ok || !validVisitId(visitId)) return remembered;
+    if (!response.ok || !validVisitId(visitId)) { landingVisitPromise = null; return remembered; }
     try {
       window.sessionStorage.setItem(storageKey(data), visitId);
     } catch {
       // Tracking failure must never block the LINE journey.
     }
     return visitId;
-  })().catch(() => '');
+  })().catch(() => { landingVisitPromise = null; return ''; });
   return landingVisitPromise;
 }

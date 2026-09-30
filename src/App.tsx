@@ -19,6 +19,7 @@ export default function App() {
   }, []);
 
   const handleOpenRegister = () => {
+    try {(window as Window & {shifengPixel?:{lead:()=>boolean}}).shifengPixel?.lead();} catch {/* Tracking must not block LINE. */}
     window.location.assign(trackedLineEntryUrl(entryVisit));
   };
 
